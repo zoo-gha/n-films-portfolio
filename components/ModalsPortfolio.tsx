@@ -7,7 +7,7 @@ export default function ModalsPortfolio({ props }: any) {
       <div>
         <div className="flex flex-col justify-between items-center">
           <div className="bg-white text-gray-700 w-72 min-h-[10rem] shadow-lg rounded-md overflow-hidden">
-            <div className="">
+            <div className="hover:overflow-hidden">
               <img className=" w-full h-[200px] object-cover cursor-pointer hover:scale-125 transition-transform duration-200 ease-in-out overflow-hidden" src={`${props.img}`} alt="" />
             </div>
             
