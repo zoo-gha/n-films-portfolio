@@ -4,6 +4,7 @@ import { Inter } from "next/font/google";
 import About from "@/components/About";
 import Testimonials from "@/components/Testimonials";
 import Portfolio from "@/components/Portfolio";
+import FooterSection from "@/components/FooterSection";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
         <About />
         <Portfolio />
         <Testimonials />
+        <FooterSection />
       </main>
     </>
   );
