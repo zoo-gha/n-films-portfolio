@@ -20,7 +20,7 @@ module.exports = {
       },
       animation:{
         fullSpin: 'fullSpin 3s linear infinite'
-      }
+      },
     },
   },
   plugins: [],
