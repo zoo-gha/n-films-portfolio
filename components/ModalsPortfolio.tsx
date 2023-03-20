@@ -8,9 +8,13 @@ export default function ModalsPortfolio({ props }: any) {
         <div className="flex flex-col justify-between items-center">
           <div className="bg-white text-gray-700 w-72 min-h-[10rem] shadow-lg rounded-md overflow-hidden">
             <div className="hover:overflow-hidden">
-              <img className=" w-full h-[200px] object-cover cursor-pointer hover:scale-125 transition-transform duration-200 ease-in-out overflow-hidden" src={`${props.img}`} alt="" />
+              <img
+                className=" w-full h-[200px] object-cover cursor-pointer hover:scale-125 transition-transform duration-200 ease-in-out overflow-hidden"
+                src={`${props.img}`}
+                alt=""
+              />
             </div>
-            
+
             <div className="p-5 flex flex-col gap-3">
               {/*----app static-----*/}
               <div className="flex items-center gap-6 justify-between">

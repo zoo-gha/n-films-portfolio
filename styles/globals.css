@@ -2,13 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
-.slick-slide>div {
-    margin: 0 30px;
+.slick-slide > div {
+  margin: 0 30px;
 }
 
-.slick-slide>div:nth-child(1){
-    margin-left: 0;
+.slick-slide > div:nth-child(1) {
+  margin-left: 0;
 }
-.slick-list{
-    margin-right: -30px;
+.slick-list {
+  margin-right: -30px;
+}
+
+.card {
+  box-shadow: 2px 2px 8px #cbcbcb, -2px -2px 8px #ffffff;
+  border-radius: 10px;
+}
+
+.card:hover {
+  box-shadow: 2px 2px 8px #cbcbcb, -2px -2px 8px #ffffff;
+  border-radius: 10px;
+}
+
+.card:hover h1::before {
+  background: black;
 }
