@@ -102,7 +102,7 @@ const services = [
 function Services() {
   return (
     <div className="bg-[#ffffff] w-full h-full overflow-hidden py-12">
-      <div className="max-w-6xl m-auto flex flex-col gap-10">
+      <div className="max-w-6xl mx-auto flex flex-col gap-10 px-4 lg:px-0">
         <span
           className="text-black text-4xl font-black self-start
           relative before:absolute before:bottom-[-10px] before:left-0 before:w-full before:h-[4px] before:bg-[#01BE83]
@@ -111,14 +111,15 @@ function Services() {
           Our Services
         </span>
         <h1
-          className={`${montserrat.className} text-black text-2xl font-medium max-w-[50rem] leading-8`}
+          className={`${montserrat.className} text-black text-2xl font-medium max-w-[50rem] lg:max-w-none leading-8`}
         >
           This is My Expertise, The Services I'll Provide My Clients
         </h1>
-        <div className="grid grid-cols-3 gap-10">
-          {services.map((service) => (
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+          {services.map((service, index) => (
             <div
-              className="card flex p-[2rem] px-[2rem] flex-1 flex-col justify-between gap-2
+              key={index}
+              className="card flex p-4 flex-col justify-between gap-2
               hover:bg-opacity-40 transition-all duration-500 ease-in-out hover:scale-105
               "
             >
@@ -144,7 +145,6 @@ function Services() {
             </div>
           ))}
         </div>
-        <div />
       </div>
     </div>
   );
