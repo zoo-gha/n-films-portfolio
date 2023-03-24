@@ -50,6 +50,7 @@ const testimonials_data = [
     }
 ];
 
+
 import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
 import NextArrow from "./NextArrow";
@@ -107,7 +108,7 @@ export default function Testimonials() {
                 }
             },
         ],
-        afterChange: current => {
+        afterChange: (current : any) => {
             setProgress( 100/ ( testimonials_data.length - slideToShow + 1) * ( current + 1 ));
         }
     }

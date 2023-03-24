@@ -65,7 +65,7 @@ export default function About() {
                     </div>
                         
     </div>*/}
-                    <div className="w-[380px] h-[420px] bg-transparent cursor-pointer group perspertive px-4">
+                    <div className="sm:[300px] md:w-[350px] lg:w-[380px] h-[420px] bg-transparent cursor-pointer group perspertive px-4">
                         <div className="relative preserve-3d group-hover:my-rotate-y-180 w-full h-full duration-1000">
                             <div className="absolute backface-hidden w-full h-full">
                                 <img src="/a6.jpg" className="w-full h-full rounded-lg" />
@@ -75,7 +75,13 @@ export default function About() {
                                     <h1 className="text-xl text-emerald-600">NOUREDDINE AGHARAS</h1>
                                     <p className="my-2 text-md text-gray-800">Manager</p>
                                     <p className="text-md text-gray-700">
-                                    Lorem ipsum dolor sit amet consectetur. Commodo volutpat nulla penatibus nisl odio a. Cursus pretium lobortis urna amet eu quam. Convallis lorem odio sem at morbi aliquam lorem faucibus. Metus rhoncus fringilla egestas et nec donec. 
+                                        Target? Means of dissemination? Expected reaction
+                                        ? These are all questions that we are asking ourselves.
+                                        Let's pose to make your film the most unique
+                                        possible. We accompany you from A to Z
+                                        to offer your users content
+                                        Quality audiovisual adapted to your
+                                        communication. 
                                     </p>
                                     <div className="flex gap-3 px-6 py-2 text-white rounded-full absolute -bottom-20 delay-500 duration-1000 group-hover:bottom-20 scale-0 group-hover:scale-125">
                                     <div className="flex flex-cols gap-6 text-xl">
