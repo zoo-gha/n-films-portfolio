@@ -2,7 +2,7 @@ import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
 
 export default function About() {
     return (
-        <section className="container mx-auto py-10 px-4 font-mont">
+        <section id="about" className="container mx-auto py-10 px-4 font-mont ">
             <div className="max-w-6xl mx-auto flex flex-col gap-10 px-4 lg:px-0">
                 <span
                     className="text-black text-4xl font-black self-start
@@ -64,7 +64,7 @@ export default function About() {
                         <img className="w-[260px] h-[390px] before:left-[25%] drop-shadow-2xl rounded-lg  object-cover " src="/a6.jpg" alt="us" />
                     </div>
                         
-    </div>*/}
+                </div>*/}
                     <div className="sm:[300px] md:w-[350px] lg:w-[380px] h-[420px] bg-transparent cursor-pointer group perspertive px-4">
                         <div className="relative preserve-3d group-hover:my-rotate-y-180 w-full h-full duration-1000">
                             <div className="absolute backface-hidden w-full h-full">

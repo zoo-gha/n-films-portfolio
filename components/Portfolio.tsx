@@ -52,7 +52,7 @@ const travaux_data = [
 import ModalsPortfolio from "./ModalsPortfolio";
 export default function Portfolio() {
   return (
-    <section className="font-mont text-black w-full h-full overflow-hidden py-12">
+    <section id="portfolio" className="font-mont text-black w-full h-full overflow-hidden py-12">
       <div className="max-w-6xl mx-auto flex flex-col gap-10 px-4 lg:px-0">
       <span
           className="text-black text-4xl font-black self-start

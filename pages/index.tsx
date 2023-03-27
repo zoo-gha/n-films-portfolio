@@ -7,6 +7,9 @@ import Portfolio from "@/components/Portfolio";
 import FooterSection from "@/components/FooterSection";
 import Services from "@/components/Services";
 import ContactUs from "@/components/ContactUs";
+import HomeSection from "@/components/HomeSection";
+import Navbar from "@/components/Navbar";
+import Top from "@/components/Top";
 
 export default function Home() {
   return (
@@ -18,7 +21,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
         
       </Head>
-      <main className="-z-1">
+      <main className="">
+        <Navbar />
+        <HomeSection />
+        <Top />
         <About />
         <Services />
         <Portfolio />

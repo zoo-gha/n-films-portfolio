@@ -30,7 +30,7 @@ const infoData = [
 
 function ContactUs() {
   return (
-    <div className="w-full overflow-hidden py-[8rem] services">
+    <div id="contact" className="w-full overflow-hidden py-[8rem] services">
       <div className="max-w-6xl mx-auto flex flex-col gap-10 px-4 lg:px-0">
         <span
           className="text-black text-4xl font-black self-start

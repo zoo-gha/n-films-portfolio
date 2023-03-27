@@ -113,7 +113,7 @@ export default function Testimonials() {
         }
     }
     return (
-        <section className="font-mont text-black -z-1">
+        <section id="testemonials" className="font-mont text-black -z-1">
 
             <div className="max-w-6xl mx-auto flex flex-col gap-10 px-4 lg:px-0">
 
