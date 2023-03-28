@@ -22,32 +22,32 @@ export default function Navbar() {
         })
     }, []);
     return (
-        <nav className={`fixed w-full left-0 top-0 z-[999] ${sticky ? 'md:bg-white shadow-xl text-gray-900' : 'text-white' }`}>
+        <nav className={`fixed w-full left-0 top-0 z-[999] ${sticky ? 'md:bg-emerald-400 text-white shadow-xl' : 'text-white' }`}>
             <div className="flex items-center justify-between">
                 <div className="mx-7">
                     <Link href={"/"}>
-                        <img className="w-30 h-12 cursor-pointer rounded-lg " src="/n-films.png" alt="" />
+                        <img className="w-25 h-12 cursor-pointer rounded-lg " src="/logo.jpg" alt="" />
                     </Link>
                 </div>
-                <div className={`{${sticky ? 'md:bg-white/0 ' : 'bg-none text-white'}  text-gray-700 lg:block hidden px-7 py-4 font-medium bg-none`}>
+                <div className={`{${sticky ? 'md:bg-white/0 ' : 'text-white'}  text-white lg:block hidden px-7 py-4 font-medium bg-none`}>
                     <ul className="flex items-center gap-1 text-md">
                         {
                             menuLinks?.map((menu:any,i:number)=>(
-                                <li key={i} className="px-3 hover:text-emerald-500">
+                                <li key={i} className="px-3">
                                     <a href={menu.link}>{menu.name}</a>
                                 </li>
                             ))
                         }
                         <li className="text-2xl hover:text-emerald-500 cursor-pointer">|</li>
-                        <li className="px-3 hover:text-emerald-500"><FaFacebook className="text-2xl cursor-pointer"/></li>
-                        <li className="px-3 hover:text-emerald-500"><FaInstagram className="text-2xl cursor-pointer  "/></li>
-                    <li className="px-3 hover:text-emerald-500"><FaYoutube className="text-2xl cursor-pointer "/></li>
+                        <span className="px-3"><FaFacebook className="fa-facebook text-2xl cursor-pointer"/></span>
+                        <span className="px-3"><FaInstagram className="fa-instagram text-2xl cursor-pointer  "/></span>
+                        <span className="px-3"><FaYoutube className="fa-youtube text-2xl cursor-pointer "/></span>
                     </ul>
                 </div>
-                <div onClick={() => setOpen(!open)}  className={`z-[999] mx-8 ${
+                <div onClick={() => setOpen(!open)}  className={`z-[999] mx-8 my-4 ${
                         open ? "text-gray-900" : "text-black"
                     } lg:hidden `}>
-                    {open ?  <AiOutlineClose  className="text-4xl text-red-700"/> : <BiMenu className="text-5xl"/>}
+                    {open ?  <AiOutlineClose  className="text-4xl text-red-700"/> : <BiMenu className="text-5xl text-white"/>}
                 </div>
                 <div className={`lg:hidden text-gray-900 absolute w-2/3 h-screen px-7 py-2 font-medium bg-white top-0 duration-300 ${
                     open ? "right-0" : "right-[-100%]"

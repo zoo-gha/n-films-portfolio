@@ -7,9 +7,9 @@ import Portfolio from "@/components/Portfolio";
 import FooterSection from "@/components/FooterSection";
 import Services from "@/components/Services";
 import ContactUs from "@/components/ContactUs";
-import HomeSection from "@/components/HomeSection";
-import Navbar from "@/components/Navbar";
 import Top from "@/components/Top";
+import Homepage from "@/components/HomePage";
+import Navbar from "@/components/Navbar";
 
 export default function Home() {
   return (
@@ -23,7 +23,7 @@ export default function Home() {
       </Head>
       <main className="">
         <Navbar />
-        <HomeSection />
+        <Homepage />
         <Top />
         <About />
         <Services />

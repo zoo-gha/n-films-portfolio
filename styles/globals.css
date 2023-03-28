@@ -29,3 +29,181 @@
 .card:hover h1::before {
     background: black;
 }
+
+li {
+    position: relative;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+
+}
+
+li :hover {
+
+    color: #01be83;
+    transition: 0.7s;
+    padding: 10px;
+    font-weight: bold;
+}
+
+li::before {
+    content: "";
+    justify-content: center;
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 10;
+    background-color: #01be83;
+
+    transform: scaleX(0);
+
+    transition: transform 0.3s ease;
+}
+
+li:hover::before {
+    transform: scaleX(1);
+    width: 65%;
+}
+
+ul {
+    margin-top: 15px;
+}
+
+.fa-facebook :hover {
+    color: rgb(24, 7, 175);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.fa-instagram :hover {
+    color: #e1306c;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.fa-youtube :hover {
+    color: red;
+    cursor: pointer;
+    transition: 0.5s;
+
+}
+
+
+.containers {
+    position: absolute;
+    left: 10%;
+    top: 40%;
+    color: white;
+    letter-spacing: 3px;
+}
+
+p {
+    font-size: 4.5rem;
+    line-height: 1;
+    font-weight: bold;
+}
+
+
+.btn {
+    width: 200px;
+    height: 50px;
+    margin-top: 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px rgba(5, 223, 110, 0.856);
+    transition: 0.5s;
+}
+
+.btn:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-top: 2px solid #01be83;
+    border-right: 2px solid #01be83;
+    animation: border-top-right 3s infinite alternate;
+}
+
+.btn :after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 2px solid #01be83;
+    border-left: 2px solid #01be83;
+    animation: border-bottom-left 3s infinite alternate;
+}
+
+.btn:hover {
+    background: #144444;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.6);
+}
+
+@keyframes border-top-right {
+    0% {
+        width: 0px;
+        height: 0px;
+    }
+
+    25% {
+        width: 200px;
+        height: 0px;
+    }
+
+    50% {
+        width: 200px;
+        height: 48px;
+    }
+
+    100% {
+        width: 200px;
+        height: 48px;
+    }
+}
+
+@keyframes border-bottom-left {
+    0% {
+        width: 0px;
+        height: 0px;
+        opacity: 0;
+    }
+
+    50% {
+        width: 0px;
+        height: 0px;
+        opacity: 0;
+    }
+
+    50.1% {
+        width: 0px;
+        height: 0px;
+        opacity: 1;
+    }
+
+    75% {
+        width: 200px;
+        height: 0px;
+        opacity: 1;
+    }
+
+    100% {
+        width: 200px;
+        height: 48px;
+        opacity: 1;
+    }
+}
+
+.image {
+    position: absolute;
+    left: 70%;
+    top: 30%;
+
+}
