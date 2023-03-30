@@ -26,15 +26,15 @@ export default function Navbar() {
             <div className="flex items-center justify-between">
                 <div className="mx-7">
                     <Link href={"/"}>
-                        <img className="w-25 h-12 cursor-pointer rounded-lg " src="/logo.jpg" alt="" />
+                        <img className="w-25 h-10 cursor-pointer rounded-lg " src="/logo.jpg" alt="" />
                     </Link>
                 </div>
-                <div className={`{${sticky ? 'md:bg-white/0 ' : 'text-white'}  text-white lg:block hidden px-7 py-4 font-medium bg-none`}>
+                <div className={`{${sticky ? 'md:bg-white/0 ' : 'text-white'}  text-white lg:block hidden px-7 py-3 font-medium bg-none`}>
                     <ul className="flex items-center gap-1 text-md">
                         {
                             menuLinks?.map((menu:any,i:number)=>(
                                 <li key={i} className="px-3">
-                                    <a href={menu.link}>{menu.name}</a>
+                                    <Link href={menu.link}>{menu.name}</Link>
                                 </li>
                             ))
                         }

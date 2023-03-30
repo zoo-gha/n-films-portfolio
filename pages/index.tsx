@@ -1,6 +1,4 @@
 import Head from "next/head";
-import Image from "next/image";
-import { Inter } from "next/font/google";
 import About from "@/components/About";
 import Testimonials from "@/components/Testimonials";
 import Portfolio from "@/components/Portfolio";
@@ -10,8 +8,16 @@ import ContactUs from "@/components/ContactUs";
 import Top from "@/components/Top";
 import Homepage from "@/components/HomePage";
 import Navbar from "@/components/Navbar";
+//import { sanityClient, urlFor } from "../sanity";
+//import { Post } from "@/typings";
 
-export default function Home() {
+
+/*interface Props {
+  posts : [Post];
+}*/
+
+export default function Home(/*props : Props*/) {
+  //console.log(props.posts)
   return (
     <>
       <Head>
@@ -34,4 +40,24 @@ export default function Home() {
       </main>
     </>
   );
+}
+
+export const getServerSideProps = async () => {
+ /* const query = `*[_type == "post"]{
+    _id,
+    title,
+    author ->{
+      name,
+      image,
+    },
+    mainImage,
+    slug
+  }`;
+
+  const posts = await sanityClient.fetch(query);
+  return {
+    props : {
+      posts,
+    }
+  }*/
 }
