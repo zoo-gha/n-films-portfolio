@@ -2,50 +2,56 @@ const travaux_data = [
   {
     id: 1,
     img: "/a1.jpg",
-    name: "Application of these application",
-    date: "12/01/2022",
+    name: "Forum of elected women.",
+    date: "17/03/2023",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Forum of elected women in the region of Guelmim and Adnoun first edition. ",
+    link : 'https://www.youtube.com/watch?v=b1FGsrznqog',
   },
   {
     id: 2,
     img: "/a2.jpg",
-    name: "Application of these application",
-    date: "12/03/2022",
+    name: "spot NFILMS 2 the 5 th video suit",
+    date: "18/12/2022",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Spot NFILMS 2 suite A report about the inhabitants of the Sahara, in the region of Guelmim and Adnoun first edition. ",
+    link : 'https://www.youtube.com/watch?v=an9CuIYSiF4',
   },
   {
     id: 3,
     img: "/a3.jpg",
-    name: "Application of these application",
-    date: "12/08/2022",
+    name: "spot NFILMS 1 the 4 th video",
+    date: "13/12/2022",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "Spot NFILMS 2 suite A report about the inhabitants of the Sahara, in the region of Guelmim and Adnoun first edition.",
+    link : 'https://www.youtube.com/watch?v=USm_F0TeCiM',
   },
   {
     id: 4,
     img: "/a4.jpg",
-    name: "Application of these application",
-    date: "12/09/2022",
+    name: "MD Talks guelmim renewable energies",
+    date: "12/11/2022",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "MD Talks guelmim renewable energies, a report on the meeting about renewable energies.",
+    link : 'https://www.youtube.com/watch?v=hGl-ChVOiBE',
   },
   {
     id: 5,
     img: "/a5.jpg",
-    name: "Application of these application",
+    name: "MCISE guelmim wad noun _____________",
     date: "12/10/2022",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "MCISE guelmim ouad noun, a report about the theater in the region ouad noun and also to have a small review of our work.",
+    link : 'https://www.youtube.com/watch?v=WpNsG5IJN7w',
   },
   {
     id: 6,
     img: "/a6.jpg",
-    name: "Application of these application",
-    date: "12/12/2022",
+    name: "this is assa zag هذه أسا الزاك ____",
+    date: "02/11/2022",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "This is assa zag هذه أسا الزاك a report about assa zag and their habits and also their traditions",
+    link : 'https://www.youtube.com/watch?v=HgaZYPv4-hA',
   },
 ];
 

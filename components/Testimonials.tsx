@@ -1,56 +1,57 @@
 const testimonials_data = [
     {
         id : 1,
-        name : "John Doe",
-        test : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        name : "Raji Anas",
+        test : "It is really a great and magnificent work with a lot of effort from the team it is a great pleasure to work with you.",
         img : '/pic.jfif'
     },
     {
         id : 2,
-        name : "Marry Queen",
-        test : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        name : "Alami Ibrahim",
+        test : "A professional and extraordinary work on their part, I like it very much n-films and it will not be the last time .",
         img : '/pic2.jpg'
     },
     {
         id : 3,
-        name : "John Doe",
-        test : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        name : "Janah Nissrine",
+        test : "It will not be the last time with you it is really an extraordinary experience, it was a professional job, thank you.",
         img : '/pic3.jpg'
     }
     ,
     {
         id : 4,
-        name : "Ali Raji",
-        test : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        name : "Ahlam Najih",
+        test : "It will not be the last time with you it is really an extraordinary experience, it was a professional job, thank you",
         img : '/pic3.jpg'
     },
     {
         id : 5,
         name : "Alami Brahim",
-        test : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        img : '/pic3.jpg'
+        test : "A professional and extraordinary work on their part, I like it very much n-films and it will not be the last time .",
+        img : '/pic2.jpg'
     },
     {
         id : 6,
         name : "Anas Salih",
-        test : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        test : "It is really a great and magnificent work with a lot of effort from the team it is a great pleasure to work with you.",
         img : '/pic3.jpg'
     },
     {
         id : 7,
         name : "Raji Brahim",
-        test : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        img : '/pic3.jpg'
+        test : "It is really a great and magnificent work with a lot of effort from the team it is a great pleasure to work with you.",
+        img : '/pic2.jpg'
     },
     {
         id : 8,
         name : "Ahmed Salih",
-        test : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        img : '/pic3.jpg'
+        test : "It will not be the last time with you it is really an extraordinary experience, it was a professional job, thank you",
+        img : '/pic.jfif'
     }
 ];
 
 
+import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
 import NextArrow from "./NextArrow";
@@ -125,11 +126,11 @@ export default function Testimonials() {
                     <Slider {...settings}>
                         {testimonials_data.map((val:any) =>{
                             return(
-                                <div key={val.id} className="bg-emerald-900 mx-auto duration-500 group-hover:opacity-60 hover:!opacity-100 group-hover:scale-[0.85] hover:!scale-100 cursor-pointer p-8 rounded-xl mix-blend-luminosity">
+                                <div key={val.id} className="bg-emerald-900 text-center justify-center mx-auto duration-500 group-hover:opacity-60 hover:!opacity-100 group-hover:scale-[0.85] hover:!scale-100 cursor-pointer p-8 rounded-xl mix-blend-luminosity h-[380px]">
                                     <img src={val.img} alt="" className="h-20  rounded-full w-20 mx-auto"  />
                                     <h4 className="uppercase text-xl font-bold text-white">{val.name}</h4>
                                     <p className="text-white/50 text-sm leading-7 my-3 font-light"> {val.test} </p>
-                                    <button className="bg-emerald-200 text-black/50 py-2.5 px-8 rounded-full hover:bg-emerald-300 hover:text-white"> Get in Touch</button>
+                                    <Link href={'#contact'} className="items-center"><button className="bg-emerald-200 text-black/50 py-2.5 px-8 rounded-full hover:bg-emerald-300 hover:text-white"> Get in Touch</button></Link>
                                 </div>
                             )
                         })}
