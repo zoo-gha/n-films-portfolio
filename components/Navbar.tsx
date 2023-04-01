@@ -22,14 +22,14 @@ export default function Navbar() {
         })
     }, []);
     return (
-        <nav className={`fixed w-full left-0 top-0 z-[999] ${sticky ? 'md:bg-emerald-400 text-white shadow-xl' : 'text-white' }`}>
+        <nav className={`fixed w-full left-0 top-0 z-[999] items-center ${sticky ? 'md:bg-white text-black shadow-xl' : 'text-white' }`}>
             <div className="flex items-center justify-between">
                 <div className="mx-7">
                     <Link href={"/"}>
-                        <img className="w-25 h-10 cursor-pointer rounded-lg " src="/logo.jpg" alt="" />
+                        <img className={`${sticky ? 'w-32 h-12' : 'w-25 h-10'} cursor-pointer rounded-lg `} src={`${sticky ? '/n-films.png' : '/logo.jpg'}`} alt="" />
                     </Link>
                 </div>
-                <div className={`{${sticky ? 'md:bg-white/0 ' : 'text-white'}  text-white lg:block hidden px-7 py-3 font-medium bg-none`}>
+                <div className={`{${sticky ? 'md:bg-white/0 text-black' : 'text-white'}   lg:block hidden px-7 py-3 font-medium bg-none`}>
                     <ul className="flex items-center gap-1 text-md">
                         {
                             menuLinks?.map((menu:any,i:number)=>(

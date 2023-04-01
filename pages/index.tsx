@@ -8,16 +8,10 @@ import ContactUs from "@/components/ContactUs";
 import Top from "@/components/Top";
 import Homepage from "@/components/HomePage";
 import Navbar from "@/components/Navbar";
-//import { sanityClient, urlFor } from "../sanity";
-//import { Post } from "@/typings";
 
 
-/*interface Props {
-  posts : [Post];
-}*/
+export default function Home() {
 
-export default function Home(/*props : Props*/) {
-  //console.log(props.posts)
   return (
     <>
       <Head>
@@ -42,8 +36,8 @@ export default function Home(/*props : Props*/) {
   );
 }
 
-export const getServerSideProps = async () => {
- /* const query = `*[_type == "post"]{
+/*export const getServerSideProps = async () => {
+  const query = `*[_type == "post"]{
     _id,
     title,
     author ->{
@@ -54,10 +48,4 @@ export const getServerSideProps = async () => {
     slug
   }`;
 
-  const posts = await sanityClient.fetch(query);
-  return {
-    props : {
-      posts,
-    }
-  }*/
-}
+}*/

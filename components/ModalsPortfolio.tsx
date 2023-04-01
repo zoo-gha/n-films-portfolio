@@ -89,7 +89,7 @@ export default function ModalsPortfolio({ props }: any) {
                 >
                   Close
                 </button>
-                <Link href={"/"}>
+                <Link href={props.link}>
                   <button
                     type="button"
                     className="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-emerald-700 text-base font-medium text-white hover:bg-emerald-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:bg-emerald-500 sm:ml-3 sm:w-auto sm:text-sm p-2 m-2"

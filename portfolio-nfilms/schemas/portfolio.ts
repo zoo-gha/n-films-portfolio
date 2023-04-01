@@ -18,7 +18,7 @@ export default defineType({
     defineField({
       name: 'urlversprojet',
       title: 'Liens vers projet',
-      type: 'string',
+      type: 'url',
     }),
     defineField({
       name: 'publishedAt',
@@ -34,14 +34,4 @@ export default defineType({
       },
     })
     ],
-
-  preview: {
-    select: {
-      title: 'name',
-      desc : 'description',
-      url : 'urlversprojet',
-      media: 'mainImage',
-      date: 'publishedAt',
-    },
-  },
 })
