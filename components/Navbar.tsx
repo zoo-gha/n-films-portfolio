@@ -47,7 +47,7 @@ export default function Navbar() {
                 <div onClick={() => setOpen(!open)}  className={`z-[999] mx-8 my-4 ${
                         open ? "text-gray-900" : "text-black"
                     } lg:hidden `}>
-                    {open ?  <AiOutlineClose  className="text-4xl text-red-700"/> : <BiMenu className="text-5xl text-white"/>}
+                    {open ?  <AiOutlineClose  className="text-4xl text-red-700"/> : <BiMenu className={`text-5xl ${sticky ? 'text-black' : "text-white"} `}/>}
                 </div>
                 <div className={`lg:hidden text-gray-900 absolute w-2/3 h-screen px-7 py-2 font-medium bg-white top-0 duration-300 ${
                     open ? "right-0" : "right-[-100%]"
