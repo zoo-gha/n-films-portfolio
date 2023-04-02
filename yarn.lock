@@ -246,6 +246,20 @@
   version "1.1.11"
   resolved "https://registry.yarnpkg.com/@types/eventsource/-/eventsource-1.1.11.tgz#a2c0bfd0436b7db42ed1b2b2117f7ec2e8478dc7"
   integrity sha512-L7wLDZlWm5mROzv87W0ofIYeQP5K2UhoFnnUyEWLKM6UBb0ZNRgAqp98qE5DkgfBXdWfc2kYmw9KZm4NLjRbsw==
+=======
+"@tabler/icons-react@^2.10.0":
+  version "2.10.0"
+  resolved "https://registry.yarnpkg.com/@tabler/icons-react/-/icons-react-2.10.0.tgz#b3b5a4b665e69482e4824c47e2a0eaa6a3adb559"
+  integrity sha512-cWJPhPv7QG89OByVaMc3cs0mY9yIHf4ctoRrjQ4+uXjna2xx0SkwfXAtgt8UhRnp/b47Pr3h59P8Vojw49d2jA==
+  dependencies:
+    "@tabler/icons" "2.10.0"
+    prop-types "^15.7.2"
+
+"@tabler/icons@2.10.0":
+  version "2.10.0"
+  resolved "https://registry.yarnpkg.com/@tabler/icons/-/icons-2.10.0.tgz#e3007f67d4ef146b506e1ce65b5ec2964fbd324a"
+  integrity sha512-rj9xrHTSw7bPpylx8g9xhhUgO9NYKX1wGnGrMaFS5CQ9KS+jhwhKFqbZaQKhXNhpvI0cLEEW6GaRXdrC3iBs1A==
+
 
 "@types/node@18.14.2":
   version "18.14.2"
@@ -261,6 +275,13 @@
   version "18.0.11"
   resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-18.0.11.tgz#321351c1459bc9ca3d216aefc8a167beec334e33"
   integrity sha512-O38bPbI2CWtgw/OoQoY+BRelw7uysmXbWvw3nLWO21H1HSh+GOlqPuXshJfjmpNlKiiSDG9cc1JZAaMmVdcTlw==
+  dependencies:
+    "@types/react" "*"
+
+"@types/react-slick@^0.23.10":
+  version "0.23.10"
+  resolved "https://registry.yarnpkg.com/@types/react-slick/-/react-slick-0.23.10.tgz#56126e6e4e95cdce7771535b2811c2c1931a7caa"
+  integrity sha512-ZiqdencANDZy6sWOWJ54LDvebuXFEhDlHtXU9FFipQR2BcYU2QJxZhvJPW6YK7cocibUiNn+YvDTbt1HtCIBVA==
   dependencies:
     "@types/react" "*"
 
@@ -882,6 +903,7 @@ postcss@^8.0.9, postcss@^8.4.21:
     nanoid "^3.3.4"
     picocolors "^1.0.0"
     source-map-js "^1.0.2"
+
 
 process-nextick-args@~2.0.0:
   version "2.0.1"
