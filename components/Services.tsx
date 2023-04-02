@@ -102,7 +102,6 @@ const services = [
 function Services() {
   return (
     <div id="services" className="bg-[#ffffff] w-full h-full overflow-hidden py-12">
-    <div className="bg-[#ffffff] w-full h-full overflow-hidden py-12">
       <div className="max-w-6xl mx-auto flex flex-col gap-10 px-4 lg:px-0">
         <span
           className="text-black text-4xl font-black self-start
@@ -152,4 +151,3 @@ function Services() {
 }
 
 export default Services;
-
