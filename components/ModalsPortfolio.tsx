@@ -1,7 +1,8 @@
+import { urlFor } from "@/sanity";
 import Link from "next/link";
 import { useState } from "react";
 
-export default function ModalsPortfolio({ props }: any) {
+export default function ModalsPortfolio({ port }: any) {
   const [showModal, setShowModal] = useState(false);
   return (
     <>
@@ -9,14 +10,14 @@ export default function ModalsPortfolio({ props }: any) {
         <div className="flex flex-col justify-between items-center">
           <div className="bg-white text-gray-700 w-72 min-h-[10rem] shadow-lg rounded-md overflow-hidden">
             <div className="hover:overflow-hidden overflow-hidden">
-              <img className=" w-full h-[200px] object-cover cursor-pointer hover:scale-125 transition-transform duration-200 ease-in-out overflow-hidden" src={`${props.img}`} alt="" />
+              <img className=" w-full h-[200px] object-cover cursor-pointer hover:scale-125 transition-transform duration-200 ease-in-out overflow-hidden" src={urlFor(port.mainImage).url()} alt="" />
             </div>
             
             <div className="p-5 flex flex-col gap-3">
               {/*----app static-----*/}
               <div className="flex items-center gap-6 justify-between">
                 <span className="py-1 pb-1 text-sm flex text-emerald-400 float-right space-x-2">
-                  <span className="text-xs text-gray-400">carry out  </span> {props.date}
+                  <span className="text-xs text-gray-400">carry out  </span> {port.publishedAt}
                 </span>
                 <button
                   onClick={() => setShowModal(true)}
@@ -31,7 +32,7 @@ export default function ModalsPortfolio({ props }: any) {
                 className="font-semibold text-md overflow-ellipsis overflow-hidden whitespace-nowrap hover:text-emerald-400"
                 title="app"
               >
-                {props.name}
+                {port.title}
               </h2>
             </div>
           </div>
@@ -55,7 +56,7 @@ export default function ModalsPortfolio({ props }: any) {
                 <div className="sm:flex sm:items-start">
                   <div className="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
                     <img
-                      src={`${props.img}`}
+                      src={urlFor(port.mainImage).url()}
                       alt="a1"
                       className="h-56 w-full object-cover"
                     />
@@ -64,18 +65,18 @@ export default function ModalsPortfolio({ props }: any) {
                         className="text-md leading-6 font-medium text-gray-500"
                         id="modal-headline"
                       >
-                        <span className="text-xs text-gray-300">réaliser le </span> {props.date}
+                        <span className="text-xs text-gray-300">réaliser le </span> {port.publishedAt}
                       </h6>
                       <h3
                         className="text-lg leading-6 font-medium text-gray-900"
                         id="modal-headline"
                       >
-                        {props.name}
+                        {port.title}
                       </h3>
                     </div>
                     
                     <div className="mt-2">
-                      <p className="text-gray-700">{props.description}</p>
+                      <p className="text-gray-700">{port.description}</p>
                     </div>
                   </div>
                 </div>
@@ -89,7 +90,7 @@ export default function ModalsPortfolio({ props }: any) {
                 >
                   Close
                 </button>
-                <Link href={props.link}>
+                <Link href={port.linktoproject}>
                   <button
                     type="button"
                     className="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-emerald-700 text-base font-medium text-white hover:bg-emerald-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:bg-emerald-500 sm:ml-3 sm:w-auto sm:text-sm p-2 m-2"

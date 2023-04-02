@@ -12,6 +12,8 @@
 /.next/
 /out/
 
+sanity-portfolio-nfilms/node_modules
+
 # production
 /build
 

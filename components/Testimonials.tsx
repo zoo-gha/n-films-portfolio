@@ -51,13 +51,21 @@ const testimonials_data = [
 ];
 
 
+import { urlFor } from "@/sanity";
+import { TestimonialsType } from "@/typing";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
 import NextArrow from "./NextArrow";
 import PrevArrow from "./PrevArrow";
 
-export default function Testimonials() {
+
+type Props = {
+    testimonials : TestimonialsType[];
+}
+
+export default function Testimonials({testimonials}: Props) {
+    //console.log(testimonials)
     const [progress, setProgress] = useState(0);
     const [slideToShow, setSlideToShow] = useState(4);
 
@@ -124,12 +132,12 @@ export default function Testimonials() {
                 {/*<div className="max-w-5xl mx-auto realtive grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-4 gap-8 group ">*/}
                 <div className="relative w-[100%] group mx-auto max-w-5xl py-8">
                     <Slider {...settings}>
-                        {testimonials_data.map((val:any) =>{
+                        {testimonials.map((val) =>{
                             return(
-                                <div key={val.id} className="bg-emerald-900 text-center justify-center mx-auto duration-500 group-hover:opacity-60 hover:!opacity-100 group-hover:scale-[0.85] hover:!scale-100 cursor-pointer p-8 rounded-xl mix-blend-luminosity h-[380px]">
-                                    <img src={val.img} alt="" className="h-20  rounded-full w-20 mx-auto"  />
+                                <div key={val._id} className="bg-emerald-900 text-center justify-center mx-auto duration-500 group-hover:opacity-60 hover:!opacity-100 group-hover:scale-[0.85] hover:!scale-100 cursor-pointer p-8 rounded-xl mix-blend-luminosity h-[380px]">
+                                    <img src={urlFor(val.climg).url()} alt="" className="h-20  rounded-full w-20 mx-auto"  />
                                     <h4 className="uppercase text-xl font-bold text-white">{val.name}</h4>
-                                    <p className="text-white/50 text-sm leading-7 my-3 font-light"> {val.test} </p>
+                                    <p className="text-white/50 text-sm leading-7 my-3 font-light"> {val.description} </p>
                                     <Link href={'#contact'} className="items-center"><button className="bg-emerald-200 text-black/50 py-2.5 px-8 rounded-full hover:bg-emerald-300 hover:text-white"> Get in Touch</button></Link>
                                 </div>
                             )
