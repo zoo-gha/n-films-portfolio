@@ -3,11 +3,17 @@ import Link from "next/link";
 
 const Homepage = () => {
   return (
-    <section>
-      <div className="h-screen bg-cover bg-no-repeat bg-center bg-fixed flex items-center">
-        <Image alt="background" src="/bg1.jpg" fill />
-      </div>
-
+    <section
+      style={{
+        backgroundImage: "url(/bg1.jpg)",
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "center",
+        height: "100vh",
+        width: "100%",
+        overflow: "hidden",
+      }}
+    >
       <div className="containers ">
         <h4 className="font-bold mb-5">FOR VIDEO EDITING</h4>
         <p>
