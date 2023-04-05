@@ -28,7 +28,7 @@ export default function Home({portfolios, testimonials} : Props) {
         <link rel="icon" href="/logoicons.PNG" />
         
       </Head>
-      <main className="mx-auto ">
+      <main className="mx-auto overflow-hidden">
         <Navbar />
         <Homepage />
         <About />

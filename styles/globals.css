@@ -90,30 +90,6 @@ ul {
 }
 
 
-.containers {
-    position: absolute;
-    left: 10%;
-    top: 40%;
-    color: white;
-    letter-spacing: 3px;
-}
-
-
-
-
-.btn {
-    width: 200px;
-    height: 50px;
-    margin-top: 20px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    box-shadow: 0px 0px 5px rgba(5, 223, 110, 0.856);
-    transition: 0.5s;
-}
-
 .btn:before {
     content: "";
     position: absolute;
@@ -195,35 +171,4 @@ ul {
         height: 48px;
         opacity: 1;
     }
-}
-
-.image {
-    position: absolute;
-    left: 70%;
-    top: 30%;
-
-}
-.slick-slide > div {
-  margin: 0 30px;
-}
-
-.slick-slide > div:nth-child(1) {
-  margin-left: 0;
-}
-.slick-list {
-  margin-right: -30px;
-}
-
-.card {
-  box-shadow: 2px 2px 8px #cbcbcb, -2px -2px 8px #ffffff;
-  border-radius: 10px;
-}
-
-.card:hover {
-  box-shadow: 2px 2px 8px #cbcbcb, -2px -2px 8px #ffffff;
-  border-radius: 10px;
-}
-
-.card:hover h1::before {
-  background: black;
 }

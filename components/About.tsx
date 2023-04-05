@@ -3,7 +3,7 @@ import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
 
 export default function About() {
     return (
-        <section id="about" className="container mx-auto py-10 px-4 font-mont ">
+        <section id="about" className="container mx-auto py-10 px-4 font-mont overflow-hidden">
             <div className="max-w-6xl mx-auto flex flex-col gap-10 px-4 lg:px-0">
                 <span
                     className="text-black text-4xl font-black self-start
@@ -19,8 +19,8 @@ export default function About() {
                 </h1>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-[60px] max-w-6xl mx-auto px-4 lg:px-0">
-                <div className="block items-center justify-center mx-8 lg:w-[400px] w-[300px]">
+            <div className="mx-auto grid grid-cols-1 md:grid-cols-2 gap-[60px] max-w-6xl  px-4 lg:px-0">
+                <div className="block items-center justify-center lg:w-[400px] w-[300px]">
                     <h3 className="py-4 text-slate-900">NFILMS is a production company audiovisual of Guelmim specialized in production of films and reports, films institutional and drone images. Our Values: rigour, adaptability, transparency and creativity. 
                     Our mission is to create engaging and bold content that looks like you. We put our Skills and our experience at your provision to improve your reputation, your media, your entertainment, differentiate yourself crowds and more.</h3>
 

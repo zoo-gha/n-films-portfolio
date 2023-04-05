@@ -65,7 +65,7 @@ export default function ModalsPortfolio({ port }: any) {
                       className="text-md leading-6 font-medium text-gray-500"
                       id="modal-headline"
                     >
-                      <span className="text-xs text-gray-300">réaliser le </span> {port.publishedAt}
+                      {port.publishedAt}
                     </h6>
                     <h3
                       className="text-lg leading-6 font-medium text-gray-900"

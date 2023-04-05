@@ -80,8 +80,6 @@ export default function Testimonials({testimonials} : Props) {
                 <h5 className="text-black text-4xl font-black self-start relative before:absolute before:bottom-[-10px] before:left-0 before:w-60 before:h-[4px] before:bg-[#01BE83]"> Testimonials </h5>
                 <h1 className="py-4 text-black text-2xl font-medium max-w-[50rem] leading-4">Read What Others Have to Say</h1>
 
-
-        {/*<div className="max-w-5xl mx-auto realtive grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-4 gap-8 group ">*/}
         <div className="relative w-[100%] group mx-auto max-w-5xl py-8 text-center justify-center items-center">
           <Slider {...settings}>
             {testimonials.map((val) => {

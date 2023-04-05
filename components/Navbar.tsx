@@ -23,14 +23,14 @@ export default function Navbar() {
     }, []);
     return (
         <nav
-            className={`fixed w-full left-0 top-0 z-[999] ${sticky ? "md:bg-white text-black shadow-xl" : "text-white"
+            className={`fixed w-full left-0 top-0 z-[999] ${sticky ? "md:bg-white text-black shadow-xl bg-white" : "text-white"
                 }`}
         >
             <div className="flex items-center justify-between">
                 <div className="mx-7">
                     <Link href={"/"}>
                         <img
-                            className="w-25 h-12 cursor-pointer rounded-lg "
+                            className="md:w-25 md:h-11 h-12 w-25 cursor-pointer rounded-lg"
                             src={`${sticky ? "/n-films.png" : "/logo.jpg"}`}
                             alt=""
                         />

@@ -5,7 +5,6 @@ import { MdEmail } from "react-icons/md";
 import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
 import { useForm, SubmitHandler } from "react-hook-form";
 
-
 const lato = Lato({
   subsets: ["latin"],
   weight: ["100", "300", "400", "700", "900"],
@@ -32,11 +31,15 @@ type Inputs = {
   name: string,
   email: string,
   subject: string,
-  message: string,
+  content: string,
 };
-function ContactUs() {
-  const { register,  formState: { errors }, handleSubmit } = useForm<Inputs>();
-  const onSubmit: SubmitHandler<Inputs> = data => console.log(data);
+const ContactUs = () => {
+  const { register,  formState: { errors }, handleSubmit, reset } = useForm<Inputs>();
+  const onSubmit: SubmitHandler<Inputs> = async (data:any) => {
+    console.log(data);
+    window.location.href = `mailto:fatimazahrabaghzif@gmail.com?subject=${data.subject}&body=Hi, my  name is ${data.name} , ${data.content}. (${data.email})`;
+    reset();
+  };
   return (
     <div id="contact" className="w-full overflow-hidden py-[8rem] services">
       <div className="max-w-6xl mx-auto flex flex-col gap-10 px-4 lg:px-0">
@@ -114,10 +117,10 @@ function ContactUs() {
           <div>
           
             <textarea
-              {...register("message", {required: true})}
+              {...register("content", {required: true})}
               placeholder="Message" 
               className="text-[#121212] w-full py-[0.7rem] rounded-[1rem] border-[#01BE83] border-2 md:py-[0.8rem] px-[1.5rem] h-[8rem] md:h-[10rem] font-normal outline-none text-xl md:text-2xl" />
-              {errors.message && <p className="text-md text-red-600 font-medium">Field Message is required!</p>}
+              {errors.content && <p className="text-md text-red-600 font-medium">Field Message is required!</p>}
           </div>
           <button
             type="submit"
